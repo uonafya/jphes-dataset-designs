@@ -7,6 +7,102 @@ jQuery(document).ready( function() {
     });
 
 </script>
+<style type="text/css">.floatingHeader {
+      position: fixed;
+      top: 45px;
+      width:96%;
+      visibility: hidden;
+    }
+
+  td, th{
+       /* css-3 */
+       white-space: -o-pre-wrap;
+       word-wrap: break-word;
+       white-space: pre-wrap;
+       white-space: -moz-pre-wrap;
+       white-space: -pre-wrap;
+
+   }
+
+.container-content{
+    width:96%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 14px Georgia, serif;
+}
+h1 {
+  font: 32px Georgia, Serif;
+  margin: 0 0 20px 0;
+}
+p {
+  margin: 0 0 20px 0;
+}
+#page-wrap {
+  width: 500px;
+  margin: 100px auto;
+}
+.spacer {
+  height: 600px;
+}
+table {
+  border-collapse: collapse;
+}
+th {
+  background-color: lightgrey;
+  padding: 10px;
+  width: 200px;
+  text-align: left;
+}
+tr:nth-child(odd) {
+  background: #eee;
+}
+td {
+  padding: 10px;
+  width: 200px;
+}
+
+.some-other-area {
+  margin: 300px 0;
+  line-height: 2;
+}
+h2 {
+  background: lightgrey;
+  padding: 10px;
+  font: 28px Georgia, Serif;
+  margin: 0 0 20px 0;
+}
+</style>
+<style type="text/css">table.tableizer-table {
+        font-size: 12px;
+        border: 1px solid #CCC;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .tableizer-table td {
+        padding: 4px;
+        margin: 3px;
+        border: 1px solid #CCC;
+    }
+    .tableizer-table th {
+        background-color: #104E8B;
+        color: #FFF;
+        font-weight: bold;
+    }
+
+.ui-widget, .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button
+{
+  font-family: LiberationSans, arial, sans-serif !important;
+  font-size: 9pt !important;
+}
+</style>
 <div id="tabs">
 <ul>
 	<li alignment="left"><a href="#tab-1">FP_RH Indicators</a></li>
@@ -15,7 +111,7 @@ jQuery(document).ready( function() {
 </ul>
 
 <div id="tab-1">
-<table border="1" cellpadding="0" cellspacing="0" height="173" style="width:800px;" width="703">
+<table border="1" cellpadding="0" cellspacing="0" height="173" style="width:800px;" width="703" class="tableizer-table persist-area">
 	<colgroup>
 		<col />
 		<col />
@@ -51,7 +147,7 @@ jQuery(document).ready( function() {
 </div>
 
 <div id="tab-2">
-<table border="1" cellpadding="0" cellspacing="0" height="194" style="width:800px;" width="697">
+<table border="1" cellpadding="0" cellspacing="0" height="194" style="width:800px;" width="697" class="tableizer-table persist-area">
 	<colgroup>
 		<col />
 		<col />
@@ -85,7 +181,7 @@ jQuery(document).ready( function() {
 </div>
 
 <div id="tab-3">
-<table border="1" cellpadding="0" cellspacing="0" style="width:800px;" width="697">
+<table border="1" cellpadding="0" cellspacing="0" style="width:800px;" width="697" class="tableizer-table persist-area">
 	<colgroup>
 		<col />
 		<col />
